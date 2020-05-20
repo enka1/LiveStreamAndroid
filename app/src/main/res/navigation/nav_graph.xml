@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/mainFragment" android:id="@+id/nav_graph"
+>
+    <fragment android:id="@+id/mainFragment" android:name="com.vcsp.livestream.fragments.MainFragment"
+              android:label="fragment_main" tools:layout="@layout/fragment_main">
+        <action android:id="@+id/action_mainFragment_to_fullCategoriesFragment"
+                app:destination="@id/fullCategoriesFragment" app:enterAnim="@anim/slide_in_bottom_fragment"
+                app:exitAnim="@anim/fragment_close_exit" app:popEnterAnim="@anim/fragment_close_enter"
+                app:popExitAnim="@anim/fragment_open_exit" app:launchSingleTop="true"/>
+        <action
+            android:id="@+id/action_mainFragment_to_liveStreamByCategoryFragment"
+            app:destination="@id/liveStreamByCategoryFragment"
+            app:enterAnim="@anim/slide_in_bottom_fragment"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_open_exit" />
+    </fragment>
+    <fragment android:id="@+id/liveStreamByCategoryFragment"
+              android:name="com.vcsp.livestream.fragments.LiveStreamByCategoryFragment"
+              android:label="fragment_live_content_by_category"
+              tools:layout="@layout/fragment_live_stream_by_category">
+        <argument
+            android:name="categoryId"
+            app:argType="integer" />
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+    </fragment>
+    <fragment android:id="@+id/liveContentRoomFragment"
+              android:name="com.vcsp.livestream.fragments.LiveStreamRoomFragment"
+              android:label="fragment_live_content_room" tools:layout="@layout/fragment_live_content_room">
+        <argument android:name="broadcastingId" app:argType="string"/>
+    </fragment>
+    <fragment android:id="@+id/liveBroadcastingFragment"
+              android:name="com.vcsp.livestream.fragments.LiveStreamFragment"
+              android:label="fragment_live_broadcasting" tools:layout="@layout/fragment_live_stream"/>
+    <action android:id="@+id/action_global_liveBroadcastingFragment" app:destination="@id/liveBroadcastingFragment"
+            app:enterAnim="@anim/slide_in_bottom_fragment"
+            app:launchSingleTop="true" app:exitAnim="@anim/fragment_close_exit"/>
+    <fragment android:id="@+id/loginFragment" android:name="com.vcsp.livestream.fragments.LoginFragment"
+              android:label="fragment_login" tools:layout="@layout/fragment_login"/>
+    <action android:id="@+id/action_global_liveContentRoomFragment" app:destination="@id/liveContentRoomFragment"
+            app:launchSingleTop="true"/>
+    <fragment android:id="@+id/fullCategoriesFragment"
+              android:name="com.vcsp.livestream.fragments.FullCategoriesFragment"
+              android:label="fragment_full_categories" tools:layout="@layout/fragment_full_categories">
+        <action
+            android:id="@+id/action_fullCategoriesFragment_to_liveStreamByCategoryFragment"
+            app:destination="@id/liveStreamByCategoryFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+</navigation>

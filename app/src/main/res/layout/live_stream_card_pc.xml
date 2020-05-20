@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/liveStreamLayout"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+
+    android:layout_marginBottom="35dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:clickable="true"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:tint="#59000000"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/liveStreamImg"
+                android:src="@drawable/sample_travel"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+            <TextView
+                android:id="@+id/numOfViewerText"
+                android:layout_marginBottom="7dp"
+                android:layout_marginRight="7dp"
+                android:textStyle="bold"
+                style="@style/TextAppearance.MaterialComponents.Body2"
+                android:text="250"
+                app:layout_constraintRight_toRightOf="@id/liveStreamImg"
+                app:layout_constraintBottom_toBottomOf="@id/liveStreamImg"
+                android:textColor="#FFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginRight="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/numOfViewerText"
+                app:layout_constraintTop_toTopOf="@id/numOfViewerText"
+                app:layout_constraintRight_toLeftOf="@id/numOfViewerText"
+                android:src="@drawable/group_24px"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:id="@+id/liveS_stream_title"
+        android:textColor="#212121"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_marginTop="3dp"
+        android:text="LiveStream Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/streamer_name"
+        android:textColor="#9f9f9f"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:text="Streamer Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

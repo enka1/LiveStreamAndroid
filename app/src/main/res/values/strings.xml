@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Livestream</string>
+    <string name="title_activity_profile_detail">ProfileDetail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="broadcaster_avatar">Broadcaster avatar</string>
+    <string name="content_thumbnail">content_thumbnail</string>
+    <string name="quality_720p">720p</string>
+    <string name="quality_540p">540p</string>
+    <string name="quality_480p">480p</string>
+    <string name="quality_1080p">1080p</string>
+    <string name="select_video_quality">Select video quality</string>
+    <string name="network_check">network_check</string>
+    <string name="close_button">CLOSE_BUTTON</string>
+    <string name="camera_flash">CAMERA_FLASH</string>
+    <string name="camera_switch">CAMERA_SWITCH</string>
+    <string name="content_title_hint">Tiêu đề của bạn ...</string>
+    <string name="content_description_hint">Mô tả nội dung livestream của bạn ...</string>
+    <string name="creating_broadcast_stream_txt">Khởi tạo stream của bạn ...</string>
+    <string name="start_broadcasting">Start broadcasting</string>
+    <string name="live">LIVE</string>
+    <string name="watcher_icon">WATCHER_ICON</string>
+    <string name="finish">Finish</string>
+    <string name="live_broadcasting">Live Broadcastings</string>
+    <string name="suggestion_content_title">You may like</string>
+    <string name="live_broadcast_icon">LIVE_BROADCAST_ICON</string>
+    <string name="news_category">News</string>
+    <string name="sport_category">Sport</string>
+    <string name="more_category">More</string>
+    <string name="suggestion_content_header">SUGGESTION</string>
+    <string name="music_category">Music</string>
+    <string name="gaming_category">Gaming</string>
+    <string name="explore_category">Explore</string>
+    <string name="audio_book_category">Audio Book</string>
+    <string name="travel_category">Travel</string>
+    <string name="cuisine_category">Cuisine</string>
+    <string name="culture_cateogry">Culture</string>
+    <string name="navigation_icon">NAVIGATION_ICON</string>
+    <string name="discover">Discover</string>
+    <string name="discover_sub_title">Find your interested live contents</string>
+</resources>

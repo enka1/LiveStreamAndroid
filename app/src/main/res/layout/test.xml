@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <View
+            android:layout_gravity="center"
+            android:background="#000"
+            android:layout_width="100dp"
+            android:layout_height="300dp"/>
+    <View
+            android:layout_gravity="center"
+            android:background="#aaa"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+    <View
+            android:layout_gravity="center"
+            android:background="#2142"
+            android:layout_width="100dp"
+            android:layout_height="150dp"/>
+</LinearLayout>

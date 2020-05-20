@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="live_stream_card_watcher_txt" type="id"/>
+    <item name="live_stream_card_broadcaster_name_txt" type="id"/>
+    <item name="live_stream_card_img" type="id"/>
+
+</resources>

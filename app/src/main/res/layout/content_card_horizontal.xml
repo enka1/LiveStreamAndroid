@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/live_stream_card_horizontal_layout"
+        android:layout_width="155dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="6dp"
+        android:alpha="0.6"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+>
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/live_stream_card_img_wrapper"
+            app:cardCornerRadius="10dp"
+    >
+        <ImageView
+                android:id="@+id/live_stream_card_content_thumbnail_img"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample_travel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/broadcaster_avatar"/>
+
+    </com.google.android.material.card.MaterialCardView>
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/live_stream_card_broadcaster_avatar"
+            android:layout_marginStart="10dp"
+            android:elevation="5dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/sample_avatar"
+            app:layout_constraintLeft_toLeftOf="@id/live_stream_card_img_wrapper"
+            app:layout_constraintBottom_toBottomOf="@id/live_stream_card_img_wrapper"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+    <TextView
+            android:id="@+id/live_stream_card_broadcaster_name_txt"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="5dp"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:textColor="@color/colorWhite"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="@id/live_stream_card_broadcaster_avatar"
+            app:layout_constraintTop_toTopOf="@id/live_stream_card_broadcaster_avatar"
+            app:layout_constraintLeft_toRightOf="@id/live_stream_card_broadcaster_avatar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
